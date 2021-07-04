@@ -1,0 +1,224 @@
+// @import "./Documents.scss";
+@import "../../../styles/Documents.scss";
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  font-family: $main-font;
+  // overflow-x: hidden;
+  .social {
+    svg {
+      width: 30px;
+    }
+  }
+}
+
+.vlist {
+  height: 100%;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--heboo);
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1em;
+  // height: 80vh;
+
+  .social {
+    display: none;
+    // position: fixed;
+  }
+
+  .img {
+    text-align: center;
+    margin: 0 auto;
+    z-index: -5;
+    align-self: center;
+    img {
+      border-radius: 50%;
+      //   width: 400px;
+      width: 100%;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    h4 {
+      @include basic-heading;
+      text-align: center;
+    }
+    p {
+      @include normal-paragraph;
+      text-align: center;
+    }
+
+    button {
+      @include key_button;
+      margin-top: 2em;
+    }
+  }
+}
+
+.facebook:hover {
+  color: #4267b2;
+  transform: scale(1.3);
+}
+.fiverr:hover {
+  color: #00b22d;
+  transform: scale(1.3);
+}
+.linkedin:hover {
+  color: #0077b5;
+  transform: scale(1.3);
+}
+.instagram:hover {
+  color: #c13584;
+  transform: scale(1.3);
+}
+.github:hover {
+  color: #333;
+  transform: scale(1.3);
+}
+
+// .Skills{
+//   position: relative;
+//   margin : 0 auto;
+//   height: 600px;
+//   width: 90%;
+//   // overflow-x: hidden;
+// }
+
+@media screen and (min-width: 620px) {
+  .homepage {
+    @include background_pattern1;
+    height: 90vh;
+    width: 100%;
+  }
+
+  .hero {
+    flex-direction: row-reverse;
+    .social {
+      display: flex;
+      order: 2 !important;
+    }
+    .img {
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      margin-left: auto;
+      display: flex;
+      align-items: flex-start;
+      padding-right: 20px;
+      padding-left: 1em;
+
+      h4 {
+        text-align: left;
+      }
+      p {
+        text-align: left;
+        max-width: 1200px;
+      }
+      button {
+        margin-right: auto;
+      }
+    }
+
+    // social
+    .social {
+      ul {
+        li {
+          a {
+            font-size: 2em;
+            color: $main_color;
+          }
+        }
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    .content {
+      // padding: 1em 0;
+      p {
+        padding-top: 2em;
+        span {
+          display: block;
+          padding: 0.3em 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  // .homepage {
+  //   @include background_pattern1;
+  //   height: 90vh;
+  //   width: 100%;
+  // }
+
+  .hero {
+    // flex-direction: row-reverse;
+    // .social {
+    //   display: flex;
+    //   order: 2 !important;
+    // }
+    .img {
+      img {
+        // max-width: auto!important;
+        width: 100%;
+      }
+    }
+    .content {
+      // width: 90%;
+      margin-left: auto;
+      display: flex;
+      align-items: flex-start;
+      padding-right: 20px;
+      padding-left: 3em;
+
+      h4 {
+        text-align: left;
+        // color: white;
+      }
+      p {
+        text-align: left;
+        max-width: 1200px;
+      }
+      button {
+        // margin-right: auto!important;
+        margin-right: auto;
+        // background-color: red;
+      }
+    }
+
+    // social
+    .social {
+      ul {
+        li {
+          a {
+            font-size: 2em;
+            color: $main_color;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    .content {
+      h4 {
+        font-size: 2.5em;
+        line-height: 1.2em;
+      }
+    }
+  }
+}

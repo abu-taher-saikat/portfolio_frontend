@@ -1,0 +1,182 @@
+@import "../../../styles/Documents.scss";
+
+/* .foot {
+  background-color: #282d32;
+}
+
+.title {
+  color: white;
+}
+
+.sub-title {
+  color: #dddddd;
+}
+
+.icons-color {
+  color: #fff;
+}
+
+.link-hover :hover {
+  color: #00ffd4;
+} */
+
+.footerDistributed {
+  background-color: $main_color;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  font-family: $main-font;
+  padding: 55px 50px;
+  margin-top: 5px;
+}
+
+.footerLogo {
+  padding-top: 0.2em;
+}
+.footerDistributed .footerLeft,
+.footerDistributed .footerCenter,
+.footerDistributed .footerRight {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footerDistributed .footerLeft {
+  width: 40%;
+}
+
+.footerDistributed h3 {
+  color: #ffffff;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+.footerDistributed h3 span {
+  color: #5383d3;
+}
+
+.footerDistributed .footerLinks {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footerDistributed .footerLinks a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footerDistributed .footerCompanyName {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footerDistributed .footerCenter {
+  width: 35%;
+}
+
+.footerDistributed .footerCenter i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footerDistributed .footerCenter i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footerDistributed .footerCenter p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footerDistributed .footerCenter p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footerDistributed .footerCenter p a {
+  color: #5383d3;
+  text-decoration: none;
+}
+
+.footerDistributed .footerRight {
+  width: 20%;
+}
+
+.footerDistributed .footerCompanyAbout {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footerDistributed .footerCompanyAbout span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footerDistributed .footerIcons {
+  margin-top: 25px;
+}
+
+.footerDistributed .footerIcons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 620px) {
+  .footerDistributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footerDistributed .footerLeft,
+  .footerDistributed .footerCenter,
+  .footerDistributed .footerRight {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footerDistributed .footerCenter i {
+    margin-left: 0;
+  }
+  .main {
+    line-height: normal;
+    font-size: auto;
+  }
+}
