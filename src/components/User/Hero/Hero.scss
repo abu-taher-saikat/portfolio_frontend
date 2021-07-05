@@ -105,6 +105,7 @@
     .social {
       display: flex;
       order: 2 !important;
+      align-items: center;
     }
     .img {
       img {
@@ -116,7 +117,7 @@
       display: flex;
       align-items: flex-start;
       padding-right: 20px;
-      padding-left: 1em;
+      padding-left: 2em;
 
       h4 {
         text-align: left;
@@ -134,10 +135,11 @@
     .social {
       ul {
         li {
-          a {
-            font-size: 2em;
-            color: $main_color;
-          }
+          padding: 1px;
+          // a {
+          //   font-size: 2em;
+          //   color: $main_color;
+          // }
         }
       }
     }

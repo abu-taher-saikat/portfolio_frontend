@@ -1,13 +1,42 @@
-.skillFLow {
+@import "../../../styles/Documents.scss";
+
+.skillFlow {
   width: 100%;
-  overflow-x: hidden;
+  height: auto;
+  // overflow-x: hidden !important;
+  // overflow-x: auto;
+}
+// display: none;
+
+.fixFlow {
+  display: none;
+}
+
+.fixFlow::-webkit-scrollbar {
+  display: none;
 }
 
 .fixFlow {
   width: 100%;
+  // height: 800px;
   height: 800px;
-  margin-bottom: 2em;
+  // height: auto;
+  // height: 100%;
+  margin-bottom: 3em;
+  // overflow-y: hidden;
+  h3 {
+    text-align: center;
+    font-family: $main_font;
+    font-size: 40px;
+    color: main_color;
+  }
   span {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .fixFlow {
+    display: block;
   }
 }

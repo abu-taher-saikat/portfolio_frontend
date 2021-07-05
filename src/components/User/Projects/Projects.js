@@ -13,48 +13,6 @@ const Projects = ({ reff }) => {
     dispatch(getprojects());
   }, [dispatch]);
 
-  // const project = projects.map((proj) => {
-  //   return (
-  //     <div
-  //       key={proj._id}
-  //       className=""
-  //     >
-  //       <div className="">
-  //         <ModalImage
-  //           small={domainName + proj.projectImage}
-  //           large={domainName + proj.projectImage}
-  //           alt={proj.title}
-  //         />
-  //       </div>
-  //       <div className="">
-  //         <h4 className="">{proj.title}</h4>
-  //         <p className="grey-text">{proj.description}</p>
-  //         <p
-  //           className=""
-  //           style={{
-  //             fontSize: "14px",
-  //             color: "#55107E",
-  //             display: "inline",
-  //           }}
-  //         >
-  //           Technologies:
-  //         </p>
-  //         <p style={{ fontSize: "12px" }}> {proj.technologies}</p>
-  //         {proj.haveLink && (
-  //           <button
-  //             className=""
-  //             target="_blank"
-  //             rel="noreferrer"
-  //             href={proj.link}
-  //           >
-  //             <i className="fa fa-clone left"></i> View project code
-  //           </button>
-  //         )}
-  //       </div>
-  //     </div>
-  //   );
-  // });
-
   return (
     <section
       id="projects"
@@ -66,6 +24,7 @@ const Projects = ({ reff }) => {
         <h2 className="">Projects</h2>
 
         <div className="project-items">
+          {console.log(`projects`, projects)}
           {projects.map((proj, i) => {
             return(
               <div
@@ -73,11 +32,12 @@ const Projects = ({ reff }) => {
                 className="project"
               >
                 <div className="img-section">
-                  <ModalImage
+                  {/* <ModalImage
                     small={domainName + proj.projectImage}
                     large={domainName + proj.projectImage}
                     alt={proj.title}
-                  />
+                  /> */}
+                  <img style={{width : "100px"}} src={proj.projectImage} alt="" />
                 </div>
                 <div className="text-section">
                   <h4 className="title">{proj.title}</h4>

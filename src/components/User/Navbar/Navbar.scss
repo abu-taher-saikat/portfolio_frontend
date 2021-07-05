@@ -76,8 +76,9 @@ ul li a {
   color: white;
 }
 .nav a:hover {
-  transform: scale(1);
+  // transform: scale(1);
   cursor: pointer;
+  color: yellow;
 }
 .nav button {
   outline: none;

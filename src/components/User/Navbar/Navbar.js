@@ -6,7 +6,7 @@ import logo from '../../../assets/images/logo.png';
 import './Navbar.scss';
 
 const Navbar = ({ onLinkClick }) => {
-  const [toggler, setToggler] = useState(true);
+  // const [toggler, setToggler] = useState(true);
   const [navbar, setNavbar] = useState(false);
   const [isNavVisible, setNavVisibility] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -159,7 +159,8 @@ const Navbar = ({ onLinkClick }) => {
     <header className="header">
     {/* <img src={require("../assets/logo.png")} className="Logo" alt="logo" /> */}
       <div className="logo">
-        <img src={logo} alt="" />
+        {/* <img src={logo} alt="" /> */}
+        codebysaikat
       </div>
       <CSSTransition
         in={!isSmallScreen || isNavVisible}

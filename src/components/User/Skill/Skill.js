@@ -14,8 +14,7 @@ const Skill = () => {
         <>
             <div className="skillFlow">
               <div className="fixFlow">
-                {/* what ithalsdjflaskd asdf */}
-                <span></span>
+                <h3>My Skill's path</h3>
                 <ReactFlow 
                   elements={elements} 
                   onLoad={onLoad}

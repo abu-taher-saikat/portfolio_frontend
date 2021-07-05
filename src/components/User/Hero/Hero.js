@@ -15,8 +15,8 @@ import {FaGithub} from 'react-icons/fa';
 const Hero = () => {
     return (
         <div>
-        <Space size="middle" className="homepage">
-            <Space size="large" className="hero">
+        <div size="middle" className="homepage">
+            <div size="large" className="hero">
                 <div className="img">
                     <img src={HeroImage} alt="noting"></img>
                 </div>
@@ -31,17 +31,17 @@ const Hero = () => {
                         </Space>
                     </div>
                 </div>
-                <Space className="social">
-                <ul>
-                    <li><Link to="/facebook"><a><FaFacebookSquare className="facebook" /></a></Link></li>
-                    <li><Link to="/fiverr"><a><SiFiverr className="fiverr" /></a></Link></li>
-                    <li><Link to="/linkedin"><a><AiFillLinkedin className="linkedin" /></a></Link></li>
-                    <li><Link to="/instagram"><a><FiInstagram className="instagram" /></a></Link></li>
-                    <li><Link to="/github"><a><FaGithub className="github" /></a></Link></li>
-                </ul>
-                </Space>
-            </Space>
-        </Space>
+                <div className="social">
+                    <ul>
+                        <li><Link to="/facebook"><FaFacebookSquare className="facebook" /></Link></li>
+                        <li><Link to="/fiverr"><SiFiverr className="fiverr" /></Link></li>
+                        <li><Link to="/linkedin"><AiFillLinkedin className="linkedin" /></Link></li>
+                        <li><Link to="/instagram"><FiInstagram className="instagram" /></Link></li>
+                        <li><Link to="/github"><FaGithub className="github" /></Link></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         </div>
     )
 }
