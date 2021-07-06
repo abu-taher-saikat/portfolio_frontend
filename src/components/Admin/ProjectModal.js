@@ -24,7 +24,25 @@ const ProjectModal = ({ id, header, proj, submitValue, colorButton }) => {
     formData.append("technologies", data.technologies);
     formData.append("haveLink", data.haveLink);
     formData.append("link", data.link);
-    formData.append("projectImage", data.projectImage[0]);
+    // formData.append("projectImage", data.projectImage);
+    // console.log(`data.projectImage`, data.projectImage)
+
+    // console.log(`formData`, formData)
+    var images = data.projectImage
+      var result = Object.keys(images).map(function(key) {
+        return [Number(key), images[key]];
+      });
+    
+    formData.append("projectImage", result)
+    console.log(`result`, result)
+    //    
+    // data.projectImage.forEach(image => {
+    //   formData.append("projectImage", image);
+    //   console.log(`data.projectImage`, image)
+    // });
+
+
+
     if (id === "editProject") {
       dispatch(updateProject(proj._id, formData));
     } else {
@@ -58,10 +76,11 @@ const ProjectModal = ({ id, header, proj, submitValue, colorButton }) => {
               <div>
                 <div className="row">
                   <div className="col-md-12 mb-md-0 mb-5 px-md-5">
+                    {/* Form */}
                     <form>
-                      <div className="row py-md-2">
-                        <div className="col-md-12">
-                          <div className="md-form mb-0">
+                      <div className="">
+                        <div className="">
+                          <div className="">
                             <label htmlFor="title" className="">
                               Title
                             </label>
@@ -69,21 +88,21 @@ const ProjectModal = ({ id, header, proj, submitValue, colorButton }) => {
                               type="text"
                               id="title"
                               name="title"
-                              className="form-control shadow-none"
+                              className=""
                               {...register("title")}
                             />
                           </div>
                         </div>
 
-                        <div className="col-md-12">
-                          <div className="md-form">
+                        <div className="">
+                          <div className="">
                             <label htmlFor="message">Description</label>
                             <textarea
                               type="text"
                               name="description"
                               id="description"
                               rows="2"
-                              className="form-control md-textarea shadow-none"
+                              className=""
                               {...register("description")}
                             />
                           </div>
@@ -146,7 +165,7 @@ const ProjectModal = ({ id, header, proj, submitValue, colorButton }) => {
                               id="projectImage"
                               name="projectImage"
                               className="form-control shadow-none"
-                              multiple={false}
+                              multiple={true}
                               {...register("projectImage")}
                             />
                           </div>

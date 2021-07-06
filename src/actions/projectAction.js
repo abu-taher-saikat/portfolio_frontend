@@ -16,6 +16,7 @@ export const getprojects = () => async (dispatch) => {
 };
 
 export const addProject = (project) => async (dispatch) => {
+  console.log(`project`, project)
   try {
     const { data } = await addProjectApi(project);
     dispatch({ type: "ADD_PROJECT", payload: data });
