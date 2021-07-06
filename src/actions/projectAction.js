@@ -19,6 +19,8 @@ export const addProject = (project) => async (dispatch) => {
   console.log(`project`, project)
   try {
     const { data } = await addProjectApi(project);
+
+    
     dispatch({ type: "ADD_PROJECT", payload: data });
     toastSuccess("Project Added Successfully");
   } catch (error) {

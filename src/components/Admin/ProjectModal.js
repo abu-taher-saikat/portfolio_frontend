@@ -24,17 +24,17 @@ const ProjectModal = ({ id, header, proj, submitValue, colorButton }) => {
     formData.append("technologies", data.technologies);
     formData.append("haveLink", data.haveLink);
     formData.append("link", data.link);
-    // formData.append("projectImage", data.projectImage);
+    formData.append("projectImage", data.projectImage);
     // console.log(`data.projectImage`, data.projectImage)
 
     // console.log(`formData`, formData)
-    var images = data.projectImage
-      var result = Object.keys(images).map(function(key) {
-        return [Number(key), images[key]];
-      });
+    // var images = data.projectImage
+    //   var result = Object.keys(images).map(function(key) {
+    //     return [Number(key), images[key]];
+    //   });
     
-    formData.append("projectImage", result)
-    console.log(`result`, result)
+    // formData.append("projectImage", result)
+    // console.log(`result`, result)
     //    
     // data.projectImage.forEach(image => {
     //   formData.append("projectImage", image);
@@ -165,7 +165,7 @@ const ProjectModal = ({ id, header, proj, submitValue, colorButton }) => {
                               id="projectImage"
                               name="projectImage"
                               className="form-control shadow-none"
-                              multiple={true}
+                              multiple={false}
                               {...register("projectImage")}
                             />
                           </div>
