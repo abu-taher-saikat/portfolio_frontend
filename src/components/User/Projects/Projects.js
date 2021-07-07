@@ -32,12 +32,12 @@ const Projects = ({ reff }) => {
                 className="project"
               >
                 <div className="img-section">
-                  {/* <ModalImage
-                    small={domainName + proj.projectImage}
-                    large={domainName + proj.projectImage}
+                  <ModalImage
+                    small={ proj.projectImage[0].secure_url}
+                    large={proj.projectImage[0].secure_url}
                     alt={proj.title}
-                  /> */}
-                  <img style={{width : "100px"}} src={proj.projectImage} alt="" />
+                  />
+                  {/* <img style={{width : "100px"}} src={proj.projectImage[0].secure_url} alt="" /> */}
                 </div>
                 <div className="text-section">
                   <h4 className="title">{proj.title}</h4>
