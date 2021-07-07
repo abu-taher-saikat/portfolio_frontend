@@ -24,7 +24,7 @@ const ProjectModal = ({ id, header, proj, submitValue, colorButton }) => {
     formData.append("technologies", data.technologies);
     formData.append("haveLink", data.haveLink);
     formData.append("link", data.link);
-    formData.append("projectImage", data.projectImage);
+    formData.append("projectImage", data.projectImage[0]);
     // console.log(`data.projectImage`, data.projectImage)
 
     // console.log(`formData`, formData)

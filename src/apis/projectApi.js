@@ -2,9 +2,7 @@ import api from "./serverApi";
 
 export const addProjectApi = (project) => {
   // api.defaults.headers["Content-Type"] = "multipart/form-data";
-  return api.post("/projects/", project, {
-    headers : { "Content-Type" : "multipart/form-data"}
-  });
+  return api.post("/projects/", project);
 };
 
 // {
