@@ -43,16 +43,14 @@ const Projects = ({ reff }) => {
                   <h4 className="title">{proj.title}</h4>
                   <p className="grey-text">{proj.description}</p>
                   <p
-                    className=""
+                    className="keywords"
                     style={{
-                      fontSize: "14px",
-                      color: "#55107E",
                       display: "inline",
                     }}
                   >
-                    Technologies:
+                    keywords:
                   </p>
-                  <p style={{ fontSize: "12px" }}> {proj.technologies}</p>
+                  <p className="keywordsname"> {proj.technologies}</p>
                   {proj.haveLink && (
                     <a
                       className=""
@@ -60,7 +58,7 @@ const Projects = ({ reff }) => {
                       rel="noreferrer"
                       href={proj.link}
                     >
-                      <i className="fa fa-clone left"></i> View project code
+                      <p className="viewSource">Source code</p> 
                     </a>
                   )}
                 </div>
