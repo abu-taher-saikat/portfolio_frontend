@@ -57,7 +57,7 @@
       text-align: center;
     }
 
-    button {
+    .button {
       @include key_button;
       margin-top: 2em;
     }

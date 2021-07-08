@@ -26,9 +26,9 @@ const Hero = () => {
                         <p>I create attractive websites. That represents your identity. Exhibit your creativity. And that makes a brand of you
                         <span></span>
                         I am a skilled full-stack web developer. Always I prefer hand-coded organized programming. I am an expert in html5, css3, bootstrap, JavaScript, react js, node js, express js and MongoDB.</p>
-                        <Space size={'large'}>
+                        
                         <button className="button">Download Resume</button>
-                        </Space>
+                        
                     </div>
                 </div>
                 <div className="social">
