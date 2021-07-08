@@ -2,9 +2,18 @@
 
 #projects {
   font-family: $main-font;
+  padding: 2em 0 ;
   .container {
     width: 90%;
     margin: 0 auto;
+    .heading{
+      font-family: $main-font;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      padding: 1em;
+
+    }
     .project-items {
       display: grid;
       grid-template-columns: repeat(12, 1fr);

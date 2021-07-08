@@ -21,7 +21,7 @@ const Projects = ({ reff }) => {
       style={{ backgroundColor: "#fff" }}
     >
       <div className="container">
-        <h2 className="">Projects</h2>
+        <h2 className="heading">Projects</h2>
 
         <div className="project-items">
           {console.log(`projects`, projects)}

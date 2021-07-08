@@ -7,6 +7,7 @@
   width: 100%;
   justify-content: center;
   font-family: $main-font;
+  margin-bottom: 2em;
   // overflow-x: hidden;
   .social {
     svg {
@@ -41,7 +42,7 @@
     img {
       border-radius: 50%;
       //   width: 400px;
-      width: 100%;
+      width: 80%;
     }
   }
 
@@ -51,6 +52,7 @@
     h4 {
       @include basic-heading;
       text-align: center;
+      padding: 1em;
     }
     p {
       @include normal-paragraph;
@@ -121,6 +123,8 @@
 
       h4 {
         text-align: left;
+        font-size: 2em;
+        line-height: 1em;
       }
       p {
         text-align: left;
@@ -149,8 +153,13 @@
     align-items: center;
     .content {
       // padding: 1em 0;
+      h4{
+        padding: 0;
+        line-height: 40px;
+      }
       p {
         padding-top: 2em;
+        font-size: 18px;
         span {
           display: block;
           padding: 0.3em 0;
@@ -159,6 +168,11 @@
     }
   }
 }
+
+
+
+
+
 
 @media screen and (min-width: 960px) {
   // .homepage {
@@ -194,6 +208,7 @@
       p {
         text-align: left;
         max-width: 1200px;
+        font-size: 24px;
       }
       button {
         // margin-right: auto!important;
@@ -219,7 +234,8 @@
     .content {
       h4 {
         font-size: 2.5em;
-        line-height: 1.2em;
+        // line-height: 1.2em;
+        line-height: 55px;
       }
     }
   }

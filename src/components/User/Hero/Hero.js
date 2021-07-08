@@ -9,6 +9,8 @@ import {SiFiverr} from 'react-icons/si'
 import {AiFillLinkedin} from 'react-icons/ai'
 import {FiInstagram} from 'react-icons/fi'
 import {FaGithub} from 'react-icons/fa';
+// import pdf from "../../../assets/images";
+import mypdf from "../../../assets/abutahersaikat.pdf";
 
 
 
@@ -26,9 +28,15 @@ const Hero = () => {
                         <p>I create attractive websites. That represents your identity. Exhibit your creativity. And that makes a brand of you
                         <span></span>
                         I am a skilled full-stack web developer. Always I prefer hand-coded organized programming. I am an expert in html5, css3, bootstrap, JavaScript, react js, node js, express js and MongoDB.</p>
-                        
-                        <button className="button">Download Resume</button>
-                        
+                        <Space size={'large'}>
+                        {/* <button className="button">Download Resume</button> */}
+                        {/* <button className="button" href='/assets/abutahersaikat.pdf' download="abutahersaikat">Download Resume</button> */}
+                        <button className="button">
+                            <a href={mypdf} download="abutahersaikat.pdf">
+                                Download Resume
+                            </a>
+                        </button>
+                        </Space>
                     </div>
                 </div>
                 <div className="social">
