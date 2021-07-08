@@ -3,6 +3,8 @@
 #projects {
   font-family: $main-font;
   padding: 2em 0 ;
+
+
   .container {
     width: 90%;
     margin: 0 auto;
@@ -22,6 +24,13 @@
       .project {
         grid-column: 1/13;
         .img-section {
+          // height: 395px;
+          // position: relative;
+          img{
+            height: 205px;
+            width: 100%;
+            position: inherit;
+          }
         }
         .text-section {
           padding: 1em;
