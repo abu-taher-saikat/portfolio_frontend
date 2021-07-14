@@ -11,7 +11,8 @@ import {FiInstagram} from 'react-icons/fi'
 import {FaGithub} from 'react-icons/fa';
 import {SiUpwork} from 'react-icons/si'
 // import pdf from "../../../assets/images";
-import mypdf from "../../../assets/abutahersaikat.pdf";
+// import mypdf from "../../../assets/abutahersaikat.pdf";
+import mypdf from "../../../assets/Abu Taher Saikat.pdf";
 
 
 
