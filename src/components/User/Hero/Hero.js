@@ -9,6 +9,7 @@ import {SiFiverr} from 'react-icons/si'
 import {AiFillLinkedin} from 'react-icons/ai'
 import {FiInstagram} from 'react-icons/fi'
 import {FaGithub} from 'react-icons/fa';
+import {SiUpwork} from 'react-icons/si'
 // import pdf from "../../../assets/images";
 import mypdf from "../../../assets/abutahersaikat.pdf";
 
@@ -41,11 +42,11 @@ const Hero = () => {
                 </div>
                 <div className="social">
                     <ul>
-                        <li><Link to="/facebook"><FaFacebookSquare className="facebook" /></Link></li>
-                        <li><Link to="/fiverr"><SiFiverr className="fiverr" /></Link></li>
-                        <li><Link to="/linkedin"><AiFillLinkedin className="linkedin" /></Link></li>
-                        <li><Link to="/instagram"><FiInstagram className="instagram" /></Link></li>
-                        <li><Link to="/github"><FaGithub className="github" /></Link></li>
+                        <li><Link to="https://github.com/saikat1095"><FaGithub className="github" /></Link></li>
+                        <li><Link to="https://www.fiverr.com/insta_code?up_rollout=true"><SiFiverr className="fiverr" /></Link></li>
+                        <li><Link to="https://www.upwork.com/freelancers/~018adb864a5b8e21f5"><SiUpwork className="upwork" /></Link></li>
+                        <li><Link to="https://www.linkedin.com/in/abu-taher-saikat-200101142/"><AiFillLinkedin className="linkedin" /></Link></li>
+                        <li><Link to="https://www.instagram.com/code_by_saikat/"><FiInstagram className="instagram" /></Link></li>
                     </ul>
                 </div>
             </div>

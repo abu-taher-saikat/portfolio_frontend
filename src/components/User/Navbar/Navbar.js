@@ -176,13 +176,13 @@ const Navbar = ({ onLinkClick }) => {
             data-offset="90"
             to="/"
           >Home</Link>
-          <Link
+          {/* <Link
             onClick={() => onLinkClick("AboutSection")}
             onCLick={changeState}
             className="nav-link"
             data-offset="90"
             to="/"
-          >About</Link>
+          >About</Link> */}
           <Link
             onClick={() => onLinkClick("ProjectSection")}
             onCLick={changeState}
@@ -190,13 +190,13 @@ const Navbar = ({ onLinkClick }) => {
             data-offset="90"
             to="/"
           >Project</Link>
-          <Link
+          {/* <Link
             onClick={() => onLinkClick("BlogSection")}
             onCLick={changeState}
             className="nav-link"
             data-offset="90"
             to="/"
-          >Blog</Link>
+          >Blog</Link> */}
           {/* <Link href="/"><a onClick={changeState}>Home</a></Link>
           <Link href="/about"><a onClick={changeState}>About</a></Link>
           <Link href="/project"><a onClick={changeState}>Project</a></Link>

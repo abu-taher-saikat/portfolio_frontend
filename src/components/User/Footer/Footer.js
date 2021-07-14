@@ -203,11 +203,11 @@ const Footer = ({ onLinkClick }) => {
                     Web Dev Trick is a blog for web designers, graphic designers, web developers &amp; SEO Learner.
                     </p>
                     <div className="footerIcons">
-                        <Link to="https://facebook.com"><FaFacebookSquare className="footerLogo" /></Link>
-                        <Link to="https://twitter.com"><AiFillGithub className="footerLogo" /></Link>
-                        <Link to="https://github.com"><FaLinkedin className="footerLogo" /></Link>
-                        <Link to="https://instagram.com"><SiFiverr className="footerLogo" /></Link>          
-                        <Link to="https://instagram.com"><FaInstagram className="footerLogo" /></Link>          
+                        <Link to="https://www.facebook.com/abutaher.saikat/"><FaFacebookSquare className="footerLogo" /></Link>
+                        <Link to="https://github.com/saikat1095"><AiFillGithub className="footerLogo" /></Link>
+                        <Link to="https://www.linkedin.com/in/abu-taher-saikat-200101142/"><FaLinkedin className="footerLogo" /></Link>
+                        <Link to="https://www.fiverr.com/insta_code?up_rollout=true"><SiFiverr className="footerLogo" /></Link>          
+                        <Link to="https://www.instagram.com/code_by_saikat/"><FaInstagram className="footerLogo" /></Link>          
                     </div>
                 </div>
                 </footer>
