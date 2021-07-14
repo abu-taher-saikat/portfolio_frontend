@@ -42,11 +42,11 @@ const Hero = () => {
                 </div>
                 <div className="social">
                     <ul>
-                        <li><Link to="https://github.com/saikat1095"><FaGithub className="github" /></Link></li>
-                        <li><Link to="https://www.fiverr.com/insta_code?up_rollout=true"><SiFiverr className="fiverr" /></Link></li>
-                        <li><Link to="https://www.upwork.com/freelancers/~018adb864a5b8e21f5"><SiUpwork className="upwork" /></Link></li>
-                        <li><Link to="https://www.linkedin.com/in/abu-taher-saikat-200101142/"><AiFillLinkedin className="linkedin" /></Link></li>
-                        <li><Link to="https://www.instagram.com/code_by_saikat/"><FiInstagram className="instagram" /></Link></li>
+                        <li><a href="https://github.com/saikat1095"><FaGithub className="github" /></a></li>
+                        <li><a href="https://www.fiverr.com/insta_code?up_rollout=true"><SiFiverr className="fiverr" /></a></li>
+                        <li><a href="https://www.upwork.com/freelancers/~018adb864a5b8e21f5"><SiUpwork className="upwork" /></a></li>
+                        <li><a href="https://www.linkedin.com/in/abu-taher-saikat-200101142/"><AiFillLinkedin className="linkedin" /></a></li>
+                        <li><a href="https://www.instagram.com/code_by_saikat/"><FiInstagram className="instagram" /></a></li>
                     </ul>
                 </div>
             </div>
