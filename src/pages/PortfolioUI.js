@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import Contacts from "../components/User/Contacts/Contacts";
-import Education from "../components/User/Education/Education";
-import Experience from "../components/User/Experience/Experience";
-import About from "../components/User/About/About";
+import ReactGa from 'react-ga';
+// import Contacts from "../components/User/Contacts/Contacts";
+// import Education from "../components/User/Education/Education";
+// import Experience from "../components/User/Experience/Experience";
+// import About from "../components/User/About/About";
 import Footer from "../components/User/Footer/Footer";
-import PageIntro from "../components/User/PageIntro/PageIntro";
+// import PageIntro from "../components/User/PageIntro/PageIntro";
 import Projects from "../components/User/Projects/Projects";
-import Skills from "../components/User/Skills/Skills";
+// import Skills from "../components/User/Skills/Skills";
 import Skill from "../components/User/Skill/Skill";
 import Hero from '../components/User/Hero/Hero';
 import isLogin from "../shared/authorization";
@@ -19,7 +20,7 @@ const PortfolioUI = () => {
   const projectSection = useRef(null);
   const educationSection = useRef(null);
   const experienceSection = useRef(null);
-  const skillSection = useRef(null);
+  // const skillSection = useRef(null);
   const contactSection = useRef(null);
   const homeSection = useRef(null);
   const aboutSection = useRef(null);
@@ -27,6 +28,9 @@ const PortfolioUI = () => {
 
   useEffect(() => {
     setIsLogged(isLogin);
+    ReactGa.initialize('UA-205974788-1')
+    // to report page view
+    ReactGa.pageview(window.location.pathname + window.location.search)
   }, [login]);
 
   const scrollUtil = (section) => {

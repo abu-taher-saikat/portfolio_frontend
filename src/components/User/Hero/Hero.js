@@ -1,4 +1,5 @@
 import { Space } from 'antd';
+import ReactGA from 'react-ga';
 // import styles from '../styles/Hero.module.scss'
 import './Hero.scss';
 import { Link } from 'react-router-dom';
@@ -14,7 +15,12 @@ import {SiUpwork} from 'react-icons/si'
 // import mypdf from "../../../assets/abutahersaikat.pdf";
 import mypdf from "../../../assets/Abu Taher Saikat.pdf";
 
-
+const clickHandler = () => {
+    ReactGA.event({
+        category : 'Button',
+        action : 'Resume Is downloaded'
+    })
+}
 
 const Hero = () => {
     return (
@@ -33,7 +39,7 @@ const Hero = () => {
                         <Space size={'large'}>
                         {/* <button className="button">Download Resume</button> */}
                         {/* <button className="button" href='/assets/abutahersaikat.pdf' download="abutahersaikat">Download Resume</button> */}
-                        <button className="button">
+                        <button onClick={clickHandler} className="button">
                             <a href={mypdf} download="abutahersaikat.pdf">
                                 Download Resume
                             </a>

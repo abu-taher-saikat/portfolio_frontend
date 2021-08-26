@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Router, Route, Switch } from "react-router-dom";
 import { useSelector } from "react-redux";
+import ReactGa from 'react-ga';
 import PortfolioUI from "./pages/PortfolioUI";
 import Login from "./components/User/Login/Login";
 import SideBar from "./components/Admin/SideBar/SideBar";
